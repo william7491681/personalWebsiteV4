@@ -23,7 +23,7 @@ const config = {
         devLaptop: "url('/devLaptop.jpg')",
       },
       fontFamily: {
-        sans: ["var(--font-sans)", ...fontFamily.sans],
+        yeseva: ['"Yeseva One"', 'serif']
       },
       colors: {
         border: "hsl(var(--border))",
