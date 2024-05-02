@@ -1,30 +1,39 @@
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 import bonk from '../../public/next.svg';
+import Socials from "@/components/socials";
 
 export default function Home() {
   return (
-    <div className="w-screen h-screen bg-slate-900 sm:bg-devLaptop bg-cover bg-top">
-      <div className="backdrop-blur-md md:grid md:grid-flow-col">
-        <div className="py-5 flex flex-col pt-10 md:justify-center md:pt-20">
-          <h1 className="text-6xl text-slate-100 font-bold text-center sm:text-slate-950">
-            William Dines
-          </h1>
-          <p className="text-center text-xl text-slate-400">
-            Software Developer
-          </p>
-          <br />
-          <h1 className="text-center text-4xl font-black text-slate-100 sm:text-slate-950">
+    <div className="w-full h-full bg-slate-900 font-yeseva">
+      <div className="py-5 mx-5 backdrop-blur-md md:grid md:grid-flow-col">
+        <div className="flex flex-col pt-10">
+          <div>
+            <h1 className="text-4xl mb-3 font-semibold text-slate-100">
+              William Dines
+            </h1>
+            <p className="text-xl mb-3 text-slate-100">
+              Software Developer
+            </p>
+            <p className="text-xl text-slate-400">
+            Skilled programmer adept at transforming concepts into tangible solutions.
+            </p>
+            <br /><br />
+            <div>
+              <Socials />
+            </div>
+            <br /><br />
+          </div>
+        </div>
+        <div className="w-full h-screen">
+          <h1 className="text-3xl text-slate-100 sm:text-slate-950">
             About
           </h1>
-          <p className="text-2xl text-slate-100 font-bold text-center sm:text-slate-950">
-          Hi there! I'm William Dines, a dedicated software developer with a knack for turning ideas into reality through code.<br /><br />
-          I began my journey in 2019 when I switched my major from kinesiology to computer science at LSU<br /><br />
-          Since then, I've made countless pet projects, covering disciplines ranging from web scraping, to web development, to data science.<br /><br />
-          Let's connect and build something remarkable!
+          <p className="text-xl text-slate-400 font-bold sm:text-slate-950">
+          I became obssessed with programming in 2019, after switching my major to computer science in my first year of college<br /><br />
+          Ever since, I have been learning and building projects to improve my skills and knowledge in many fields, ranging from data science to automated testing<br /><br />
+          Let's get together and build something amazing!
           </p>
-        </div>
-        <div className="flex justify-center w-full h-screen">
           <p>
             test
           </p>
