@@ -44,6 +44,11 @@ export default function Home() {
 
   return (
     <div className="w-full h-full bg-slate-900 font-yeseva">
+      {/* <button className="fixed top-0 z-10 text-3xl font-black text-white" onClick={() => {
+        console.log(scrollY)
+      }}>
+        test
+      </button> */}
       <div className="py-5 backdrop-blur-md md:flex">
         <div className="mx-5 flex flex-col pt-10 md:mr-5">
           <h1 className="text-4xl mb-3 font-semibold text-slate-100 md:sticky md:top-[3.75rem]">
@@ -61,21 +66,21 @@ export default function Home() {
           </div>
           <br /><br />
           <div className={"text-slate-400 text-3xl hidden md:block max-w-fit sticky top-[31rem] min-[886px]:top-[27rem] min-[1004px]:top-[25rem] hover:text-white transition ease-in-out duration-300 "
-            + (scrollY < 325 ? "text-white" : "")
+            + (scrollY < 295 ? "text-white" : "")
           }>
             <a onClick={() => {scrollTo("about")}} className="cursor-pointer flex items-center">
               <Dot />About
             </a>
           </div>
           <div className={"text-slate-400 text-3xl hidden md:block max-w-fit sticky top-[33.25rem] min-[886px]:top-[29.25rem] min-[1004px]:top-[27.25rem] hover:text-white transition ease-in-out duration-300 "
-            + ((scrollY >= 325) && (scrollY < 1475) ? "text-white" : "")
+            + ((scrollY >= 295) && (scrollY < 1350) ? "text-white" : "")
           }>
             <a onClick={() => {scrollTo("experience")}} className="cursor-pointer flex items-center">
               <Dot />Experience
             </a>
           </div>
           <div className={"text-slate-400 text-3xl hidden md:block max-w-fit sticky top-[35.5rem] min-[886px]:top-[31.5rem] min-[1004px]:top-[29.5rem] hover:text-white transition ease-in-out duration-300 "
-            + ((scrollY >= 1475) ? "text-white" : "")
+            + ((scrollY >= 1350) ? "text-white" : "")
           }>
             <a onClick={() => {scrollTo("projects")}} className="cursor-pointer flex items-center">
               <Dot />Projects
@@ -87,18 +92,18 @@ export default function Home() {
             <h1 className="text-3xl text-center mb-2 text-slate-100 sticky top-0 bg-slate-900">
               About
             </h1>
-            <p className="mx-5 text-xl text-slate-400 pb-2">
-            I became obssessed with programming in 2019, after switching my major to computer science in my first year of college<br /><br />
-            Ever since, I have been learning and building projects to improve my skills and knowledge in many fields, ranging from data science to automated testing<br /><br />
+            <p className="mx-5 text-xl text-slate-400 pb-2 lg:text-center">
+            I became obssessed with programming in 2019, after switching my major to computer science in my first year of college.<br /><br />
+            Ever since, I have been learning and building projects to improve my skills and knowledge in many fields, ranging from data science to automated testing.<br /><br />
             Let"s get together and build something amazing!
             </p>
           </div>
-          <div className="mb-16">
-            <h1 className="text-3xl text-center mb-1 text-slate-100 sticky top-0 bg-slate-900">
+          <div className="mb-16 md:flex md:flex-col md:items-center">
+            <h1 className="w-full text-3xl text-center mb-1 text-slate-100 sticky top-0 bg-slate-900">
               Experience
             </h1>
             <br />
-            <Card className=" mx-5 grid grid-flow-row bg-slate-300 mb-10 md:w-[35rem]">
+            <Card className="mx-5 grid grid-flow-row bg-slate-300 mb-10 md:w-[35rem] lg:w-[50rem]">
               <div className="flex items-center">
                 <CardHeader className="w-full">
                   <CardTitle>QA Automation Engineer</CardTitle>
@@ -138,7 +143,7 @@ export default function Home() {
                 </Badge>
               </CardFooter>
             </Card>
-            <Card className="mx-5 grid grid-flow-row bg-slate-300 mb-10 md:w-[35rem]">
+            <Card className="mx-5 grid grid-flow-row bg-slate-300 mb-10 md:w-[35rem] lg:w-[50rem]">
               <div className="flex items-center">
                 <CardHeader className="w-full">
                   <CardTitle>Development Intern</CardTitle>
@@ -180,7 +185,7 @@ export default function Home() {
                 </Badge>
               </CardFooter>
             </Card>
-            <Card className="mx-5 grid grid-flow-row bg-slate-300 md:w-[35rem]">
+            <Card className="mx-5 grid grid-flow-row bg-slate-300 md:w-[35rem] lg:w-[50rem]">
               <div className="flex items-center">
                 <CardHeader className="w-full">
                   <CardTitle>Student IT Worker</CardTitle>
@@ -215,12 +220,12 @@ export default function Home() {
             </Card>
             <br />
           </div>
-          <div className="mx-5">
-            <h1 className="text-3xl text-slate-100 sticky top-0 bg-slate-900 text-center">
+          <div className="mx-5 lg:flex lg:flex-col items-center">
+            <h1 className="w-full text-3xl text-slate-100 sticky top-0 bg-slate-900 text-center">
               Projects
             </h1>
             <br /><br />
-            <Card className="rounded-none shadow-none border-none mb-10">
+            <Card className="rounded-none shadow-none border-none mb-10 lg:w-7/12">
               <CardHeader className="m-0 p-0 space-y-0">
                 <img src={predictionProject.src}/>
                 <CardTitle className="bg-slate-950 text-slate-100 font-normal text-lg text-center pb-1">
@@ -233,7 +238,7 @@ export default function Home() {
                 }}>Link to Github</Badge>
               </CardContent>
             </Card>
-            <Card className="rounded-none shadow-none border-none">
+            <Card className="rounded-none shadow-none border-none lg:w-7/12">
               <CardHeader className="m-0 p-0 space-y-0">
                 <img src={previousPersonalWebsite.src}/>
                 <CardTitle className="bg-slate-950 text-slate-100 font-normal text-lg text-center pb-1">

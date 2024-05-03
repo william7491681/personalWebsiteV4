@@ -20,7 +20,8 @@ const config = {
     },
     extend: {
       screens: {
-        'md': '825px'
+        'md': '825px',
+        'lg': '1140px',
       },
       fontFamily: {
         yeseva: ['Yeseva\\One', 'serif']
