@@ -5,7 +5,7 @@ import { Card, CardHeader, CardTitle, CardDescription, CardContent, CardFooter }
 import { Badge } from "@/components/ui/badge";
 import topEchelon from "../../public/topEchelon.webp"
 import dxc from "../../public/dxc.jpg"
-import lsu from "../../public/lsu.jpg"
+import lsu from "../../public/LSU.jpg"
 import predictionProject from "../../public/diamondPredictionsProject.png"
 import previousPersonalWebsite from "../../public/previousPersonalWebsite.png"
 
