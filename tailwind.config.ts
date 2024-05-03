@@ -19,9 +19,6 @@ const config = {
       },
     },
     extend: {
-      backgroundImage: {
-        devLaptop: "url('/devLaptop.jpg')",
-      },
       fontFamily: {
         yeseva: ['"Yeseva One"', 'serif']
       },
