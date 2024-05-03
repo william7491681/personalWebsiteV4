@@ -3,22 +3,22 @@ import Socials from "@/components/socials";
 import { useEffect, useState } from "react";
 import { Card, CardHeader, CardTitle, CardDescription, CardContent, CardFooter } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import topEchelon from '../../public/topEchelon.webp'
-import dxc from '../../public/dxc.jpg'
-import lsu from '../../public/lsu.jpg'
-import predictionProject from '../../public/diamondPredictionsProject.png'
-import previousPersonalWebsite from '../../public/previousPersonalWebsite.png'
+import topEchelon from "../../public/topEchelon.webp"
+import dxc from "../../public/dxc.jpg"
+import lsu from "../../public/lsu.jpg"
+import predictionProject from "../../public/diamondPredictionsProject.png"
+import previousPersonalWebsite from "../../public/previousPersonalWebsite.png"
 
 const scrollTo = (section: string) => {
   switch (section) {
-    case 'about':
-      window.scrollTo({ top: 0, behavior: 'smooth'})
+    case "about":
+      window.scrollTo({ top: 0, behavior: "smooth"})
       break;
-    case 'experience':
-      window.scrollTo({ top: 325, behavior: 'smooth'})
+    case "experience":
+      window.scrollTo({ top: 325, behavior: "smooth"})
       break;
-    case 'projects':
-      window.scrollTo({ top: 1475, behavior: 'smooth'})
+    case "projects":
+      window.scrollTo({ top: 1475, behavior: "smooth"})
       break;
     default:
       break;
@@ -61,23 +61,23 @@ export default function Home() {
           </div>
           <br /><br />
           <div className={"text-slate-400 text-3xl hidden md:block max-w-fit sticky top-[20.75rem] hover:text-white transition ease-in-out duration-300 "
-            + (scrollY < 325 ? 'text-white' : '')
+            + (scrollY < 325 ? "text-white" : "")
           }>
-            <a onClick={() => {scrollTo('about')}} className='cursor-pointer flex items-center'>
+            <a onClick={() => {scrollTo("about")}} className="cursor-pointer flex items-center">
               <Dot />About
             </a>
           </div>
           <div className={"text-slate-400 text-3xl hidden md:block max-w-fit sticky top-[23rem] hover:text-white transition ease-in-out duration-300 "
-            + ((scrollY >= 325) && (scrollY < 1475) ? 'text-white' : '')
+            + ((scrollY >= 325) && (scrollY < 1475) ? "text-white" : "")
           }>
-            <a onClick={() => {scrollTo('experience')}} className='cursor-pointer flex items-center'>
+            <a onClick={() => {scrollTo("experience")}} className="cursor-pointer flex items-center">
               <Dot />Experience
             </a>
           </div>
           <div className={"text-slate-400 text-3xl hidden md:block max-w-fit sticky top-[25.25rem] hover:text-white transition ease-in-out duration-300 "
-            + ((scrollY >= 1475) ? 'text-white' : '')
+            + ((scrollY >= 1475) ? "text-white" : "")
           }>
-            <a onClick={() => {scrollTo('projects')}} className='cursor-pointer flex items-center'>
+            <a onClick={() => {scrollTo("projects")}} className="cursor-pointer flex items-center">
               <Dot />Projects
             </a>
           </div>
@@ -90,7 +90,7 @@ export default function Home() {
             <p className="text-xl text-slate-400">
             I became obssessed with programming in 2019, after switching my major to computer science in my first year of college<br /><br />
             Ever since, I have been learning and building projects to improve my skills and knowledge in many fields, ranging from data science to automated testing<br /><br />
-            Let's get together and build something amazing!
+            Let"s get together and build something amazing!
             </p>
           </div>
           <div className="mb-20">
@@ -227,8 +227,8 @@ export default function Home() {
                 </CardTitle>
               </CardHeader>
               <CardContent className="bg-slate-950 flex justify-center pb-1">
-                <Badge variant={'outline'} className="text-white hover:bg-white hover:text-slate-950 hover:cursor-pointer" onClick={() => {
-                  window.open('https://github.com/william7491681/Linear-Model-With-Website')
+                <Badge variant={"outline"} className="text-white hover:bg-white hover:text-slate-950 hover:cursor-pointer" onClick={() => {
+                  window.open("https://github.com/william7491681/Linear-Model-With-Website")
                 }}>Link to Github</Badge>
               </CardContent>
             </Card>
@@ -240,8 +240,8 @@ export default function Home() {
                 </CardTitle>
               </CardHeader>
               <CardContent className="bg-slate-950 flex justify-center pb-1">
-                <Badge variant={'outline'} className="text-white hover:bg-white hover:text-slate-950 hover:cursor-pointer" onClick={() => {
-                  window.open('https://github.com/william7491681/website-V3')
+                <Badge variant={"outline"} className="text-white hover:bg-white hover:text-slate-950 hover:cursor-pointer" onClick={() => {
+                  window.open("https://github.com/william7491681/website-V3")
                 }}>Link to Github</Badge>
               </CardContent>
             </Card>
@@ -250,13 +250,13 @@ export default function Home() {
             <p>Made by William Dines</p>
             <p>
               Created with <span className="font-black text-slate-100 hover:text-cyan-400 hover:cursor-pointer" onClick={() => {
-                window.open('https://nextjs.org/')
+                window.open("https://nextjs.org/")
               }}>Next.js</span>,&nbsp;
               <span className="font-black text-slate-100 hover:text-cyan-400 hover:cursor-pointer" onClick={() => {
-                window.open('https://tailwindcss.com/')
+                window.open("https://tailwindcss.com/")
               }}>Tailwind CSS</span>, and&nbsp;
               <span className="font-black text-slate-100 hover:text-cyan-400 hover:cursor-pointer" onClick={() => {
-                window.open('https://www.typescriptlang.org/')
+                window.open("https://www.typescriptlang.org/")
               }}>TypeScript</span>
             </p>
           </div>

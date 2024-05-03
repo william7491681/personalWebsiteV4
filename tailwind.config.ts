@@ -20,7 +20,7 @@ const config = {
     },
     extend: {
       fontFamily: {
-        yeseva: ['"Yeseva One"', 'serif']
+        yeseva: ['Yeseva\\One', 'serif']
       },
       colors: {
         border: "hsl(var(--border))",
