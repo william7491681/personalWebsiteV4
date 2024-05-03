@@ -44,37 +44,37 @@ export default function Home() {
 
   return (
     <div className="w-full h-full bg-slate-900 font-yeseva">
-      <div className="py-5 mx-5 backdrop-blur-md md:flex">
-        <div className="flex flex-col pt-10 md:mr-5">
+      <div className="py-5 backdrop-blur-md md:flex">
+        <div className="mx-5 flex flex-col pt-10 md:mr-5">
           <h1 className="text-4xl mb-3 font-semibold text-slate-100 md:sticky md:top-[3.75rem]">
             William Dines
           </h1>
-          <p className="text-xl mb-3 text-slate-100 md:sticky md:top-[7rem]">
+          <p className="text-xl mb-3 text-slate-100 md:sticky md:top-[9.5rem] min-[886px]:top-[7rem]">
             Software Developer
           </p>
-          <p className="text-xl text-slate-400 md:sticky md:top-[9.5rem]">
+          <p className="text-xl text-slate-400 md:sticky md:top-[12rem] min-[886px]:top-[9.75rem]">
           Skilled programmer adept at transforming concepts into tangible solutions.
           </p>
           <br /><br />
-          <div className="md:sticky md:top-[16rem]">
+          <div className="md:sticky md:top-[22rem] min-[886px]:top-[18rem] min-[1004px]:top-[16rem]">
             <Socials />
           </div>
           <br /><br />
-          <div className={"text-slate-400 text-3xl hidden md:block max-w-fit sticky top-[20.75rem] hover:text-white transition ease-in-out duration-300 "
+          <div className={"text-slate-400 text-3xl hidden md:block max-w-fit sticky top-[31rem] min-[886px]:top-[27rem] min-[1004px]:top-[25rem] hover:text-white transition ease-in-out duration-300 "
             + (scrollY < 325 ? "text-white" : "")
           }>
             <a onClick={() => {scrollTo("about")}} className="cursor-pointer flex items-center">
               <Dot />About
             </a>
           </div>
-          <div className={"text-slate-400 text-3xl hidden md:block max-w-fit sticky top-[23rem] hover:text-white transition ease-in-out duration-300 "
+          <div className={"text-slate-400 text-3xl hidden md:block max-w-fit sticky top-[33.25rem] min-[886px]:top-[29.25rem] min-[1004px]:top-[27.25rem] hover:text-white transition ease-in-out duration-300 "
             + ((scrollY >= 325) && (scrollY < 1475) ? "text-white" : "")
           }>
             <a onClick={() => {scrollTo("experience")}} className="cursor-pointer flex items-center">
               <Dot />Experience
             </a>
           </div>
-          <div className={"text-slate-400 text-3xl hidden md:block max-w-fit sticky top-[25.25rem] hover:text-white transition ease-in-out duration-300 "
+          <div className={"text-slate-400 text-3xl hidden md:block max-w-fit sticky top-[35.5rem] min-[886px]:top-[31.5rem] min-[1004px]:top-[29.5rem] hover:text-white transition ease-in-out duration-300 "
             + ((scrollY >= 1475) ? "text-white" : "")
           }>
             <a onClick={() => {scrollTo("projects")}} className="cursor-pointer flex items-center">
@@ -83,22 +83,22 @@ export default function Home() {
           </div>
         </div>
         <div className="w-full h-full md:ml-5">
-          <div className="mb-20">
-            <h1 className="text-3xl text-slate-100">
+          <div className="mb-16">
+            <h1 className="text-3xl text-center mb-2 text-slate-100 sticky top-0 bg-slate-900">
               About
             </h1>
-            <p className="text-xl text-slate-400">
+            <p className="mx-5 text-xl text-slate-400 pb-2">
             I became obssessed with programming in 2019, after switching my major to computer science in my first year of college<br /><br />
             Ever since, I have been learning and building projects to improve my skills and knowledge in many fields, ranging from data science to automated testing<br /><br />
             Let"s get together and build something amazing!
             </p>
           </div>
-          <div className="mb-20">
-            <h1 className="text-3xl text-slate-100">
+          <div className="mb-16">
+            <h1 className="text-3xl text-center mb-1 text-slate-100 sticky top-0 bg-slate-900">
               Experience
             </h1>
             <br />
-            <Card className="grid grid-flow-row bg-slate-300 mb-10 md:w-[35rem]">
+            <Card className=" mx-5 grid grid-flow-row bg-slate-300 mb-10 md:w-[35rem]">
               <div className="flex items-center">
                 <CardHeader className="w-full">
                   <CardTitle>QA Automation Engineer</CardTitle>
@@ -138,7 +138,7 @@ export default function Home() {
                 </Badge>
               </CardFooter>
             </Card>
-            <Card className="grid grid-flow-row bg-slate-300 mb-10 md:w-[35rem]">
+            <Card className="mx-5 grid grid-flow-row bg-slate-300 mb-10 md:w-[35rem]">
               <div className="flex items-center">
                 <CardHeader className="w-full">
                   <CardTitle>Development Intern</CardTitle>
@@ -180,7 +180,7 @@ export default function Home() {
                 </Badge>
               </CardFooter>
             </Card>
-            <Card className="grid grid-flow-row bg-slate-300 mb-10 md:w-[35rem]">
+            <Card className="mx-5 grid grid-flow-row bg-slate-300 md:w-[35rem]">
               <div className="flex items-center">
                 <CardHeader className="w-full">
                   <CardTitle>Student IT Worker</CardTitle>
@@ -213,12 +213,13 @@ export default function Home() {
                 </Badge>
               </CardFooter>
             </Card>
+            <br />
           </div>
-          <div>
-            <h1 className="text-3xl text-slate-100">
+          <div className="mx-5">
+            <h1 className="text-3xl text-slate-100 sticky top-0 bg-slate-900 text-center">
               Projects
             </h1>
-            <br />
+            <br /><br />
             <Card className="rounded-none shadow-none border-none mb-10">
               <CardHeader className="m-0 p-0 space-y-0">
                 <img src={predictionProject.src}/>

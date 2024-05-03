@@ -19,6 +19,9 @@ const config = {
       },
     },
     extend: {
+      screens: {
+        'md': '825px'
+      },
       fontFamily: {
         yeseva: ['Yeseva\\One', 'serif']
       },
